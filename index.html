@@ -620,11 +620,11 @@
           </div>
 
           <div id="autoSendStatusBanner" class="p-3 rounded-xl bg-emerald-500/20 border border-emerald-400/50 text-xs font-semibold text-emerald-200 flex items-center justify-between gap-2">
-            <span>⚡ Auto-Sending Prize to WhatsApp (+91 9943780468)...</span>
+            <span>⚡ Ready to share your prize using WhatsApp or SMS</span>
             <span id="autoSendCountdown" class="px-2 py-0.5 rounded bg-emerald-500 text-slate-950 font-bold">Auto</span>
           </div>
           <p class="text-xs text-pink-100 leading-relaxed">
-            👇 <strong>Auto-WhatsApp Triggered to +91 9943780468!</strong> If your browser blocked the automatic popup, tap below:
+            👇 <strong>Use the buttons below to share your prize</strong> If your browser blocked the automatic popup, tap below:
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
@@ -683,7 +683,7 @@
 
       <div class="space-y-2">
         <label class="text-xs font-semibold text-pink-200">Your Mobile / WhatsApp Number:</label>
-        <input id="creatorPhoneInput" type="tel" placeholder="e.g. 919943780468" value="" class="w-full px-3.5 py-2.5 rounded-xl bg-black/40 border border-pink-400/40 text-sm text-white placeholder-pink-200/40 focus:outline-none focus:border-amber-300" />
+        <input id="creatorPhoneInput" type="tel" placeholder="e.g. 91XXXXXXXXXX" value="" class="w-full px-3.5 py-2.5 rounded-xl bg-black/40 border border-pink-400/40 text-sm text-white placeholder-pink-200/40 focus:outline-none focus:border-amber-300" />
       </div>
 
       <div class="p-3 rounded-2xl bg-white/5 border border-pink-400/20 space-y-2">
@@ -734,7 +734,7 @@
       document.body.removeChild(ta);
     }
 
-    // --- CREATOR PHONE SETUP (Hardcoded Default: 919943780468) ---
+    // --- CREATOR PHONE SETUP ---
     let targetMobileNumber = '';
     function loadSavedMobile() {
       const params = new URLSearchParams(window.location.search);
@@ -1417,7 +1417,7 @@
 
         playBirthdayMelody();
         spawnHeartBurst(window.innerWidth / 2, window.innerHeight / 2, 32);
-        showToast('🎁 Prize Won! Automatically sending to WhatsApp (+91 9943780468)...');
+        showToast('🎁 Prize won! Choose how you want to share it.');
 
         // Sending is user-controlled: use the WhatsApp/SMS buttons below.
 
